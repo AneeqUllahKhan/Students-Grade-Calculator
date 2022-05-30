@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grade Calculator</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Animation Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/owl.carousel.min.css">
+
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand text-dark fw-bold" href="index.html" style="font-weight: bolder;"> <img
+                        src="images/logo.png" alt=""> Students Grades</a>
+
+
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">
+                                Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                Contact</a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Full Page Intro -->
+
+
+        <div class="view" style="width: 100%; height: auto;" data-aos="fade-up">
+
+    </header><br>
+    <section class="home">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-controls">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"
+                        style="background-image:url('images/PM-Ehsaas-Program-Pakistan.jpg')"></li>
+                    <li data-target="#carousel" data-slide-to="1"
+                        style="background-image:url('images/Scholarships-US.jpg')"></li>
+                    <li data-target="#carousel" data-slide-to="2"
+                        style="background-image:url('images/aptech-vision.jpg')"></li>
+
+                </ol>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <img src="images/left-arrow.svg" alt="Prev">
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <img src="images/right-arrow.svg" alt="Next">
+                </a>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url('images/PM-Ehsaas-Program-Pakistan.jpg')">
+                    <div class="container">
+                        <a href="https://ehsaas.hec.gov.pk/#/login" target="_blank" style="text-decoration: none;">
+                            <h2>Ehsaas Program</h2>
+                        </a>
+                        <p>Scholarship</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url('images/Scholarships-US.jpg')">
+                    <div class="container">
+                        <a href="https://hec.gov.pk/english/HECAnnouncements/Pages/Scholarships-USA.aspx"
+                            target="_blank" style="text-decoration:none;">
+                            <h2>HEC</h2>
+                        </a>
+
+                        <p>US Scholarship</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url('images/aptech-vision.jpg')">
+                    <div class="container">
+                        <a href="https://aptech-education.com.pk/Vision19.html" target="_blank"
+                            style="text-decoration: none;">
+                            <h2>Aptech</h2>
+                        </a>
+                        <p>Vision 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+
+
+
+    <!-- Form -->
+
+    <section id="calculator">
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img src="images/teacher-register.png" alt="" height="auto" width="100%">
+
+                </div>
+
+                <div class="col-md-6">
+                    <br><br><br><br><br>
+
+                    <h3>Normal Grade Calculator</h3>
+                    <form>
+
+                        <div class="mb-3">
+                            <!-- <input type="number" class="form-control" id="cmp" placeholder="Computer/Chemistry Marks"> -->
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sub1" placeholder="Enter Your Subject Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sub2" placeholder="Enter Your Subject Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sub3" placeholder="Enter Your Subject Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sub4" placeholder="Enter Your Subject Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sub5" placeholder="Enter Your Subject Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="total" placeholder="Enter Your Total Numbers">
+                        </div>
+                        <input type="button" class="btn btn-primary" value="Show Percentage" onclick="cal()">
+                        <div><br>
+                            <p id="show-result"></p>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <br><br><br><br><br>
+
+                    <h3>SSC Part I & II (Science Group)</h3>
+                    <form>
+
+                        <div class="mb-3">
+                            <!-- <input type="number" class="form-control" id="cmp" placeholder="Computer/Chemistry Marks"> -->
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="chem" placeholder="Computer/Chemistry Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="physics" placeholder="Physics Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="math" placeholder="Maths Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="urd" placeholder="Urdu Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="english" placeholder="English Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="pak-std" placeholder="PST/ISL Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="sindhi" placeholder="Sindhi Marks">
+                        </div>
+                        <input type="button" class="btn btn-primary" value="Show Percentage" onclick="calc()">
+                        <div><br>
+                            <p id="showresult"></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/create23.jpg" alt="" height="auto" width="100%">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/create.jpg" alt="" height="auto" width="100%">
+
+                </div>
+                <div class="col-md-6">
+                    <br><br><br><br><br>
+
+                    <h3>HSSC Part I & II (Science Group)</h3>
+                    <form>
+
+                        <div class="mb-3">
+                            <!-- <input type="number" class="form-control" id="cmp" placeholder="Computer/Chemistry Marks"> -->
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="cmp" placeholder="Computer/Chemistry Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="phys" placeholder="Physics Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="maths" placeholder="Maths Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="urdu" placeholder="Urdu Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="eng" placeholder="English Marks">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="pst" placeholder="PST/ISL Marks">
+                        </div>
+                        <input type="button" class="btn btn-primary" value="Show Percentage" onclick="calcy()">
+                        <div><br>
+                            <p id="showdata"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section><br>
+
+    <section id="blog">
+        <h2 style="text-align:center;">Blogs</h2><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/pexels-pixabay-256455.jpg" alt="" height="auto"
+                            width="100%">
+                        <div class="overlay">
+                            <h2>Library Knowledge</h2>
+                            <p class="set1">
+                                <a href="#">
+                                    <i class="bi bi-type-bold"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </p>
+                            <hr>
+                            <hr>
+                            <p class="set2">
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-type-bold"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="hovereffect">
+
+                                <img class="img-responsive" src="images/pexels-pixabay-355948 (1).jpg" alt=""
+                                    height="auto" width="100%">
+                                <div class="overlay">
+
+                                    <h2>30 Ideas for Exams</h2>
+
+                                    <p class="set1">
+                                        <a href="#">
+                                            <i class="bi bi-type-bold"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-suit-heart-fill"></i>
+                                        </a>
+                                    </p>
+                                    <hr>
+                                    <hr>
+                                    <p class="set2">
+                                        <a href="#">
+                                            <i class="fa fa-type-bold"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-type-bold"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/pexels-pixabay-301920 (1).jpg" alt=""
+                                    height="auto" width="100%">
+                                <div class="overlay">
+                                    <h2>How to study</h2>
+                                    <p class="set1">
+                                        <a href="#">
+                                            <i class="bi bi-type-bold"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-suit-heart-fill"></i>
+                                        </a>
+                                    </p>
+                                    <hr>
+                                    <hr>
+                                    <p class="set2">
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-type-bold"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/pexels-pixabay-256417.jpg" alt="" height="auto"
+                                    width="100%">
+                                <div class="overlay">
+                                    <h2>Learn faster</h2>
+                                    <p class="set1">
+                                        <a href="#">
+                                            <i class="bi bi-type-bold"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-suit-heart-fill"></i>
+                                        </a>
+                                    </p>
+                                    <hr>
+                                    <hr>
+                                    <p class="set2">
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-type-bold"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/pexels-pixabay-159844.jpg" alt="" height="auto"
+                                    width="100%">
+                                <div class="overlay">
+                                    <h2>Classroom Effects</h2>
+                                    <p class="set1">
+                                        <a href="#">
+                                            <i class="bi bi-type-bold"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-suit-heart-fill"></i>
+                                        </a>
+                                    </p>
+                                    <hr>
+                                    <hr>
+                                    <p class="set2">
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-type-bold"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer class="bd-footer py-5 mt-5" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 col-lg-4 mb-3">
+                    <h5 style="text-align:center;">Feedback</h5>
+                    <ul class="list-unstyled">
+                        <p class="text-wrap" style="text-align:center;">We are very excited to know from you how your
+                            experience was on our site. Be sure to tell us
+                            and if there is any complain, Click the button below for feedback
+                        </p>
+                        <li class="mb-2" style="text-align:center;">
+                            <a href="https://forms.gle/FtBkMeMcvt3iKVdi7" target="_blank" class="form-link">
+                                <button type="button" class="btn btn-outline-success">FeedBack</button></a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1 mb-3">
+                    <h5 style="text-align:center;"> Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" style="text-align:center;"><a href="#" style="text-decoration:none;">Home</a>
+                        </li>
+                        <li class="mb-2" style="text-align:center;"><a href="#calculator"
+                                style="text-decoration:none;">Grade Calculator</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                    <h5 style="text-align:center;">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" style="text-align:center;"><a href="mailto:aneequllah.khan@outlook.com"
+                                style="text-decoration:none;">aneequllah.khan@outlook.com</a></li>
+                        <li class="mb-2" style="text-align:center;"><a href="tel:+923062341354"
+                                style="text-decoration:none;">+923062341354</a></li>
+                        <li class="mb-2" style="text-align:center;"><a href="#" style="text-decoration:none;"></a></li>
+                        <li class="mb-2" style="text-align:center;"><a href="#" style="text-decoration:none;"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="js/percentage.js"></script>
+
+
+
+</body>
+
+</html>
